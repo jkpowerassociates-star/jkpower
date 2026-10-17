@@ -1,0 +1,22 @@
+{
+  "name": "JK BOQ - J.K & Power Associates",
+  "short_name": "JK BOQ",
+  "description": "BOQ and estimate maker for J.K & Power Associates: transformer, DG, cables, panels, earthing - Excel and PDF in one tap.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#e9ebe4",
+  "theme_color": "#1f5f7c",
+  "categories": ["productivity", "business", "utilities"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Quick BOQ", "url": "./", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Full BOQ Studio", "url": "./full.html", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]}
+  ]
+}
