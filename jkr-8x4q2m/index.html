@@ -44,6 +44,8 @@ async function open_(raw){
   const d=b64(DATA);
   const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:d.slice(0,12),additionalData:new TextEncoder().encode("jkpower")},k,d.slice(12));
   const htmlText=new TextDecoder().decode(pt);
+  if(document.readyState!=="complete") await new Promise(r=>window.addEventListener("load",r,{once:true}));
+  await new Promise(r=>setTimeout(r,0));
   document.open(); document.write(htmlText); document.close();
 }
 async function derive(pw){
